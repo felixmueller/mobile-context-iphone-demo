@@ -2,16 +2,16 @@
 {
 	1D3623240D0F684500981E51 /* ContextDemoAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {844, 699}}";
-			sepNavSelRange = "{209, 0}";
-			sepNavVisRange = "{0, 687}";
+			sepNavIntBoundsRect = "{{0, 0}, {1024, 738}}";
+			sepNavSelRange = "{236, 0}";
+			sepNavVisRange = "{0, 700}";
 		};
 	};
 	1D3623250D0F684500981E51 /* ContextDemoAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1150, 754}}";
-			sepNavSelRange = "{202, 0}";
-			sepNavVisRange = "{32, 333}";
+			sepNavIntBoundsRect = "{{0, 0}, {1150, 689}}";
+			sepNavSelRange = "{201, 0}";
+			sepNavVisRange = "{167, 311}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* ContextDemo */ = {
@@ -22,23 +22,24 @@
 	};
 	28A0AAE50D9B0CCF005BE974 /* ContextDemo_Prefix.pch */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {844, 699}}";
-			sepNavSelRange = "{0, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1024, 761}}";
+			sepNavSelRange = "{328, 0}";
 			sepNavVisRange = "{0, 328}";
 		};
 	};
-	28C286DF0D94DF7D0034E888 /* SourceViewController.h */ = {
+	28C286DF0D94DF7D0034E888 /* AttributesViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {844, 699}}";
-			sepNavSelRange = "{182, 0}";
-			sepNavVisRange = "{0, 420}";
+			sepNavIntBoundsRect = "{{0, 0}, {1024, 738}}";
+			sepNavSelRange = "{300, 96}";
+			sepNavVisRange = "{0, 464}";
 		};
 	};
-	28C286E00D94DF7D0034E888 /* SourceViewController.m */ = {
+	28C286E00D94DF7D0034E888 /* AttributesViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1237, 2405}}";
-			sepNavSelRange = "{1000, 0}";
-			sepNavVisRange = "{0, 1581}";
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 2483}}";
+			sepNavSelRange = "{205, 0}";
+			sepNavVisRange = "{0, 1615}";
+			sepNavWindowFrame = "{{15, 207}, {984, 846}}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -48,6 +49,8 @@
 		activeTarget = 1D6058900D05DD3D006BFB54 /* ContextDemo */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* ContextDemo */,
+		);
+		breakpoints = (
 		);
 		codeSenseManager = DC159A3410D935FE0021DC0C /* Code sense */;
 		executables = (
@@ -73,7 +76,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					666,
+					846,
 					20,
 					48,
 					43,
@@ -88,6 +91,34 @@
 					PBXFileDataSource_Errors_ColumnID,
 					PBXFileDataSource_Warnings_ColumnID,
 					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					680,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXSymbolsDataSource_SymbolNameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					16,
+					200,
+					50,
+					606,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXSymbolsDataSource_SymbolTypeIconID,
+					PBXSymbolsDataSource_SymbolNameID,
+					PBXSymbolsDataSource_SymbolTypeID,
+					PBXSymbolsDataSource_ReferenceNameID,
 				);
 			};
 			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
@@ -112,41 +143,28 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 285605835;
-			PBXWorkspaceStateSaveDate = 285605835;
+			PBXPerProjectTemplateStateSaveDate = 285880922;
+			PBXWorkspaceStateSaveDate = 285880922;
 		};
 		perUserProjectItems = {
-			DC7D3C611105B29B00905C4B = DC7D3C611105B29B00905C4B /* PBXTextBookmark */;
-			DC7D3C621105B29B00905C4B = DC7D3C621105B29B00905C4B /* PBXTextBookmark */;
+			DC1AF971110A3268003DBAB1 /* PlistBookmark */ = DC1AF971110A3268003DBAB1 /* PlistBookmark */;
+			DC1AF972110A3268003DBAB1 /* PBXTextBookmark */ = DC1AF972110A3268003DBAB1 /* PBXTextBookmark */;
+			DC1AF973110A3268003DBAB1 /* PBXTextBookmark */ = DC1AF973110A3268003DBAB1 /* PBXTextBookmark */;
+			DC1AF974110A3268003DBAB1 /* PBXTextBookmark */ = DC1AF974110A3268003DBAB1 /* PBXTextBookmark */;
+			DC5C6AE0110874FE00150805 = DC5C6AE0110874FE00150805 /* PBXTextBookmark */;
+			DC7846F4110A233700496C96 = DC7846F4110A233700496C96 /* PBXTextBookmark */;
+			DC784796110A2ADA00496C96 = DC784796110A2ADA00496C96 /* PBXTextBookmark */;
+			DC784797110A2ADA00496C96 = DC784797110A2ADA00496C96 /* PBXTextBookmark */;
+			DC784798110A2ADA00496C96 = DC784798110A2ADA00496C96 /* PBXTextBookmark */;
+			DC784799110A2ADA00496C96 = DC784799110A2ADA00496C96 /* PBXTextBookmark */;
+			DC78479A110A2ADA00496C96 = DC78479A110A2ADA00496C96 /* PBXTextBookmark */;
+			DC7847A4110A2BC500496C96 = DC7847A4110A2BC500496C96 /* PBXTextBookmark */;
+			DC7847BC110A2D9300496C96 = DC7847BC110A2D9300496C96 /* PBXTextBookmark */;
+			DC7847EA110A31CD00496C96 = DC7847EA110A31CD00496C96 /* PBXBookmark */;
+			DC7847EB110A31CD00496C96 = DC7847EB110A31CD00496C96 /* PlistBookmark */;
+			DC7847ED110A31EA00496C96 = DC7847ED110A31EA00496C96 /* PlistBookmark */;
 			DC7D3C631105B29B00905C4B = DC7D3C631105B29B00905C4B /* PBXTextBookmark */;
-			DC7D3C731105B31600905C4B = DC7D3C731105B31600905C4B /* PlistBookmark */;
-			DC9991441106013100B2D6AF /* XCBuildMessageTextBookmark */ = DC9991441106013100B2D6AF /* XCBuildMessageTextBookmark */;
-			DC9991451106013100B2D6AF /* PBXTextBookmark */ = DC9991451106013100B2D6AF /* PBXTextBookmark */;
-			DC99914C1106019500B2D6AF /* XCBuildMessageTextBookmark */ = DC99914C1106019500B2D6AF /* XCBuildMessageTextBookmark */;
-			DC99914D1106019500B2D6AF /* PBXTextBookmark */ = DC99914D1106019500B2D6AF /* PBXTextBookmark */;
-			DC999150110601CD00B2D6AF /* PBXTextBookmark */ = DC999150110601CD00B2D6AF /* PBXTextBookmark */;
-			DC999151110601CD00B2D6AF /* XCBuildMessageTextBookmark */ = DC999151110601CD00B2D6AF /* XCBuildMessageTextBookmark */;
-			DC999153110601CD00B2D6AF /* PBXTextBookmark */ = DC999153110601CD00B2D6AF /* PBXTextBookmark */;
-			DC999155110601D000B2D6AF /* PBXTextBookmark */ = DC999155110601D000B2D6AF /* PBXTextBookmark */;
-			DC999156110601D000B2D6AF /* XCBuildMessageTextBookmark */ = DC999156110601D000B2D6AF /* XCBuildMessageTextBookmark */;
-			DC999158110601D000B2D6AF /* PBXTextBookmark */ = DC999158110601D000B2D6AF /* PBXTextBookmark */;
-			DC99915C1106020F00B2D6AF /* PBXTextBookmark */ = DC99915C1106020F00B2D6AF /* PBXTextBookmark */;
-			DC99915D1106020F00B2D6AF /* XCBuildMessageTextBookmark */ = DC99915D1106020F00B2D6AF /* XCBuildMessageTextBookmark */;
-			DC99915E1106020F00B2D6AF /* PBXTextBookmark */ = DC99915E1106020F00B2D6AF /* PBXTextBookmark */;
-			DC99915F1106021900B2D6AF /* PBXTextBookmark */ = DC99915F1106021900B2D6AF /* PBXTextBookmark */;
-			DC9991601106021900B2D6AF /* PBXTextBookmark */ = DC9991601106021900B2D6AF /* PBXTextBookmark */;
-			DC9991611106021900B2D6AF /* PBXTextBookmark */ = DC9991611106021900B2D6AF /* PBXTextBookmark */;
-			DC9991661106023700B2D6AF /* PBXTextBookmark */ = DC9991661106023700B2D6AF /* PBXTextBookmark */;
-			DC9991801106026000B2D6AF /* PBXTextBookmark */ = DC9991801106026000B2D6AF /* PBXTextBookmark */;
-			DC999187110602C700B2D6AF /* PBXTextBookmark */ = DC999187110602C700B2D6AF /* PBXTextBookmark */;
-			DC999188110602C800B2D6AF /* PBXTextBookmark */ = DC999188110602C800B2D6AF /* PBXTextBookmark */;
-			DC999189110602C800B2D6AF /* PlistBookmark */ = DC999189110602C800B2D6AF /* PlistBookmark */;
-			DC99918A110602C800B2D6AF /* PBXTextBookmark */ = DC99918A110602C800B2D6AF /* PBXTextBookmark */;
-			DCE8384B1105B72C00C432F4 = DCE8384B1105B72C00C432F4 /* PBXTextBookmark */;
-			DCE8384C1105B72C00C432F4 = DCE8384C1105B72C00C432F4 /* PBXTextBookmark */;
-			DCE8384D1105B72C00C432F4 = DCE8384D1105B72C00C432F4 /* PBXTextBookmark */;
-			DCE8384E1105B72C00C432F4 = DCE8384E1105B72C00C432F4 /* PBXTextBookmark */;
-			DCE838581105B8EE00C432F4 = DCE838581105B8EE00C432F4 /* PBXTextBookmark */;
+			DCE7E278110622AC00025C23 = DCE7E278110622AC00025C23 /* PBXTextBookmark */;
 		};
 		sourceControlManager = DC159A3310D935FE0021DC0C /* Source Control */;
 		userBuildSettings = {
@@ -154,7 +172,7 @@
 	};
 	29B97316FDCFA39411CA2CEA /* main.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {844, 699}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1024, 761}}";
 			sepNavSelRange = "{378, 0}";
 			sepNavVisRange = "{0, 378}";
 		};
@@ -188,6 +206,25 @@
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+			$cs = 1;
+			$ds = 1;
+			$eax = 1;
+			$ebp = 1;
+			$ebx = 1;
+			$ecx = 1;
+			$edi = 1;
+			$edx = 1;
+			$eflags = 1;
+			$eip = 1;
+			$es = 1;
+			$esi = 1;
+			$esp = 1;
+			$fs = 1;
+			$gs = 1;
+			$mxcsr = 1;
+			$ss = 1;
+		};
 	};
 	DC159A3310D935FE0021DC0C /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -203,25 +240,183 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	DC7D3C611105B29B00905C4B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623240D0F684500981E51 /* ContextDemoAppDelegate.h */;
-		name = "ContextDemoAppDelegate.h: 15";
+	DC1AF971110A3268003DBAB1 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* ContextDemo-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/Felix/Unterlagen/Studium/Masterarbeit/Implementation/mobile-context-iphone-demo/ContextDemo-Info.plist";
 		rLen = 0;
-		rLoc = 359;
-		rType = 0;
-		vrLen = 687;
-		vrLoc = 0;
+		rLoc = 9223372036854775807;
 	};
-	DC7D3C621105B29B00905C4B /* PBXTextBookmark */ = {
+	DC1AF972110A3268003DBAB1 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 28A0AAE50D9B0CCF005BE974 /* ContextDemo_Prefix.pch */;
-		name = "ContextDemo_Prefix.pch: 1";
+		name = "ContextDemo_Prefix.pch: 15";
 		rLen = 0;
-		rLoc = 0;
+		rLoc = 328;
 		rType = 0;
 		vrLen = 328;
 		vrLoc = 0;
+	};
+	DC1AF973110A3268003DBAB1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 18";
+		rLen = 0;
+		rLoc = 378;
+		rType = 0;
+		vrLen = 378;
+		vrLoc = 0;
+	};
+	DC1AF974110A3268003DBAB1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC7846C9110A220300496C96 /* SourcesViewController.m */;
+		name = "SourcesViewController.m: 123";
+		rLen = 0;
+		rLoc = 3402;
+		rType = 0;
+		vrLen = 1583;
+		vrLoc = 0;
+	};
+	DC5C6ABA1108733200150805 /* ContextService.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = ContextService.h;
+		path = "/Users/Felix/Unterlagen/Studium/Masterarbeit/Implementation/mobile-context-iphone-demo/../mobile-context-iphone-lib/build/Debug-iphonesimulator/usr/local/include/ContextService.h";
+		sourceTree = "<absolute>";
+	};
+	DC5C6AE0110874FE00150805 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC5C6ABA1108733200150805 /* ContextService.h */;
+		name = "ContextService.h: 12";
+		rLen = 0;
+		rLoc = 280;
+		rType = 0;
+		vrLen = 892;
+		vrLoc = 0;
+	};
+	DC7846C8110A220300496C96 /* SourcesViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1024, 738}}";
+			sepNavSelRange = "{326, 0}";
+			sepNavVisRange = "{0, 355}";
+		};
+	};
+	DC7846C9110A220300496C96 /* SourcesViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 2444}}";
+			sepNavSelRange = "{3402, 0}";
+			sepNavVisRange = "{0, 1583}";
+		};
+	};
+	DC7846F4110A233700496C96 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* ContextDemoAppDelegate.m */;
+		name = "ContextDemoAppDelegate.m: 9";
+		rLen = 0;
+		rLoc = 201;
+		rType = 0;
+		vrLen = 997;
+		vrLoc = 0;
+	};
+	DC784796110A2ADA00496C96 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* AttributesViewController.h */;
+		name = "AttributesViewController.h: 14";
+		rLen = 96;
+		rLoc = 300;
+		rType = 0;
+		vrLen = 464;
+		vrLoc = 0;
+	};
+	DC784797110A2ADA00496C96 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* AttributesViewController.m */;
+		name = "AttributesViewController.m: 9";
+		rLen = 0;
+		rLoc = 205;
+		rType = 0;
+		vrLen = 1615;
+		vrLoc = 0;
+	};
+	DC784798110A2ADA00496C96 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC7846C8110A220300496C96 /* SourcesViewController.h */;
+		name = "SourcesViewController.h: 18";
+		rLen = 0;
+		rLoc = 326;
+		rType = 0;
+		vrLen = 355;
+		vrLoc = 0;
+	};
+	DC784799110A2ADA00496C96 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC7846C9110A220300496C96 /* SourcesViewController.m */;
+		name = "SourcesViewController.m: 123";
+		rLen = 0;
+		rLoc = 3402;
+		rType = 0;
+		vrLen = 1583;
+		vrLoc = 0;
+	};
+	DC78479A110A2ADA00496C96 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC7D3C651105B2BF00905C4B /* ContextViewController.h */;
+		name = "ContextViewController.h: 18";
+		rLen = 0;
+		rLoc = 388;
+		rType = 0;
+		vrLen = 456;
+		vrLoc = 0;
+	};
+	DC7847A4110A2BC500496C96 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = DC7D3C661105B2BF00905C4B /* ContextViewController.m */;
+		name = "ContextViewController.m: 33";
+		rLen = 0;
+		rLoc = 989;
+		rType = 0;
+		vrLen = 1887;
+		vrLoc = 0;
+	};
+	DC7847BC110A2D9300496C96 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* ContextDemoAppDelegate.h */;
+		name = "ContextDemoAppDelegate.h: 11";
+		rLen = 0;
+		rLoc = 236;
+		rType = 0;
+		vrLen = 700;
+		vrLoc = 0;
+	};
+	DC7847EA110A31CD00496C96 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = DC7847D8110A301F00496C96 /* Icon.png */;
+	};
+	DC7847EB110A31CD00496C96 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* ContextDemo-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/Felix/Unterlagen/Studium/Masterarbeit/Implementation/mobile-context-iphone-demo/ContextDemo-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	DC7847ED110A31EA00496C96 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* ContextDemo-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/Felix/Unterlagen/Studium/Masterarbeit/Implementation/mobile-context-iphone-demo/ContextDemo-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
 	};
 	DC7D3C631105B29B00905C4B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -235,324 +430,27 @@
 	};
 	DC7D3C651105B2BF00905C4B /* ContextViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {844, 699}}";
-			sepNavSelRange = "{83, 0}";
-			sepNavVisRange = "{0, 422}";
+			sepNavIntBoundsRect = "{{0, 0}, {1024, 738}}";
+			sepNavSelRange = "{388, 0}";
+			sepNavVisRange = "{0, 456}";
 		};
 	};
 	DC7D3C661105B2BF00905C4B /* ContextViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1237, 2743}}";
-			sepNavSelRange = "{1001, 0}";
-			sepNavVisRange = "{364, 1914}";
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 2665}}";
+			sepNavSelRange = "{989, 0}";
+			sepNavVisRange = "{0, 1887}";
 			sepNavWindowFrame = "{{15, 207}, {984, 846}}";
 		};
 	};
-	DC7D3C731105B31600905C4B /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* ContextDemo-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/Felix/Unterlagen/Studium/Masterarbeit/Implementation/ContextDemo/ContextDemo-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775808;
-	};
-	DC9991441106013100B2D6AF /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "ContextService.h: No such file or directory";
-		fRef = 1D3623240D0F684500981E51 /* ContextDemoAppDelegate.h */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 9;
-		rType = 1;
-	};
-	DC9991451106013100B2D6AF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623240D0F684500981E51 /* ContextDemoAppDelegate.h */;
-		name = "ContextDemoAppDelegate.h: 10";
-		rLen = 0;
-		rLoc = 209;
-		rType = 0;
-		vrLen = 379;
-		vrLoc = 32;
-	};
-	DC99914C1106019500B2D6AF /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "ContextService.h: No such file or directory";
-		fRef = 1D3623240D0F684500981E51 /* ContextDemoAppDelegate.h */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 9;
-		rType = 1;
-	};
-	DC99914D1106019500B2D6AF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623240D0F684500981E51 /* ContextDemoAppDelegate.h */;
-		name = "ContextDemoAppDelegate.h: 10";
-		rLen = 0;
-		rLoc = 209;
-		rType = 0;
-		vrLen = 687;
-		vrLoc = 0;
-	};
-	DC999150110601CD00B2D6AF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623240D0F684500981E51 /* ContextDemoAppDelegate.h */;
-		name = "ContextDemoAppDelegate.h: 10";
-		rLen = 0;
-		rLoc = 209;
-		rType = 0;
-		vrLen = 687;
-		vrLoc = 0;
-	};
-	DC999151110601CD00B2D6AF /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "IContextSource.h: No such file or directory";
-		fRef = DC999152110601CD00B2D6AF /* ContextService.h */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 11;
-		rType = 1;
-	};
-	DC999152110601CD00B2D6AF /* ContextService.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = ContextService.h;
-		path = "/Users/Felix/Unterlagen/Studium/Masterarbeit/Implementation/mobile-context-iphone-demo/../mobile-context-iphone-lib/Classes/ContextService.h";
-		sourceTree = "<absolute>";
-	};
-	DC999153110601CD00B2D6AF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = DC999154110601CD00B2D6AF /* ContextService.h */;
-		name = "ContextService.h: 12";
-		rLen = 0;
-		rLoc = 280;
-		rType = 0;
-		vrLen = 1069;
-		vrLoc = 0;
-	};
-	DC999154110601CD00B2D6AF /* ContextService.h */ = {
-		isa = PBXFileReference;
-		name = ContextService.h;
-		path = "/Users/Felix/Unterlagen/Studium/Masterarbeit/Implementation/mobile-context-iphone-demo/../mobile-context-iphone-lib/Classes/ContextService.h";
-		sourceTree = "<absolute>";
-	};
-	DC999155110601D000B2D6AF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623240D0F684500981E51 /* ContextDemoAppDelegate.h */;
-		name = "ContextDemoAppDelegate.h: 10";
-		rLen = 0;
-		rLoc = 209;
-		rType = 0;
-		vrLen = 379;
-		vrLoc = 32;
-	};
-	DC999156110601D000B2D6AF /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "IContextSource.h: No such file or directory";
-		fRef = DC999157110601D000B2D6AF /* ContextService.h */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 11;
-		rType = 1;
-	};
-	DC999157110601D000B2D6AF /* ContextService.h */ = {
-		isa = PBXFileReference;
-		name = ContextService.h;
-		path = "/Users/Felix/Unterlagen/Studium/Masterarbeit/Implementation/mobile-context-iphone-demo/../mobile-context-iphone-lib/Classes/ContextService.h";
-		sourceTree = "<absolute>";
-	};
-	DC999158110601D000B2D6AF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = DC999159110601D000B2D6AF /* ContextService.h */;
-		name = "ContextService.h: 12";
-		rLen = 0;
-		rLoc = 280;
-		rType = 0;
-		vrLen = 408;
-		vrLoc = 0;
-	};
-	DC999159110601D000B2D6AF /* ContextService.h */ = {
-		isa = PBXFileReference;
-		name = ContextService.h;
-		path = "/Users/Felix/Unterlagen/Studium/Masterarbeit/Implementation/mobile-context-iphone-demo/../mobile-context-iphone-lib/Classes/ContextService.h";
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {844, 699}}";
-			sepNavSelRange = "{280, 0}";
-			sepNavVisRange = "{0, 1069}";
-		};
-	};
-	DC99915C1106020F00B2D6AF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = DC999157110601D000B2D6AF /* ContextService.h */;
-		name = "ContextService.h: 12";
-		rLen = 0;
-		rLoc = 280;
-		rType = 0;
-		vrLen = 408;
-		vrLoc = 0;
-	};
-	DC99915D1106020F00B2D6AF /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "RootViewController.h: No such file or directory";
-		fRef = 1D3623250D0F684500981E51 /* ContextDemoAppDelegate.m */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 10;
-		rType = 1;
-	};
-	DC99915E1106020F00B2D6AF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* ContextDemoAppDelegate.m */;
-		name = "ContextDemoAppDelegate.m: 10";
-		rLen = 0;
-		rLoc = 202;
-		rType = 0;
-		vrLen = 298;
-		vrLoc = 32;
-	};
-	DC99915F1106021900B2D6AF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = DC999159110601D000B2D6AF /* ContextService.h */;
-		name = "ContextService.h: 12";
-		rLen = 0;
-		rLoc = 280;
-		rType = 0;
-		vrLen = 1069;
-		vrLoc = 0;
-	};
-	DC9991601106021900B2D6AF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* ContextDemoAppDelegate.m */;
-		name = "ContextDemoAppDelegate.m: 10";
-		rLen = 0;
-		rLoc = 202;
-		rType = 0;
-		vrLen = 1071;
-		vrLoc = 0;
-	};
-	DC9991611106021900B2D6AF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* ContextDemoAppDelegate.m */;
-		name = "ContextDemoAppDelegate.m: 10";
-		rLen = 0;
-		rLoc = 211;
-		rType = 0;
-		vrLen = 1071;
-		vrLoc = 0;
-	};
-	DC9991661106023700B2D6AF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* ContextDemoAppDelegate.m */;
-		name = "ContextDemoAppDelegate.m: 11";
-		rLen = 0;
-		rLoc = 251;
-		rType = 0;
-		vrLen = 1103;
-		vrLoc = 0;
-	};
-	DC9991801106026000B2D6AF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* ContextDemoAppDelegate.m */;
-		name = "ContextDemoAppDelegate.m: 11";
-		rLen = 0;
-		rLoc = 251;
-		rType = 0;
-		vrLen = 1103;
-		vrLoc = 0;
-	};
-	DC999187110602C700B2D6AF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* ContextDemoAppDelegate.m */;
-		name = "ContextDemoAppDelegate.m: 10";
-		rLen = 0;
-		rLoc = 202;
-		rType = 0;
-		vrLen = 333;
-		vrLoc = 32;
-	};
-	DC999188110602C800B2D6AF /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* ContextDemoAppDelegate.m */;
-		name = "ContextDemoAppDelegate.m: 11";
-		rLen = 0;
-		rLoc = 251;
-		rType = 0;
-		vrLen = 1106;
-		vrLoc = 0;
-	};
-	DC999189110602C800B2D6AF /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* ContextDemo-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/Felix/Unterlagen/Studium/Masterarbeit/Implementation/mobile-context-iphone-demo/ContextDemo-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	DC99918A110602C800B2D6AF /* PBXTextBookmark */ = {
+	DCE7E278110622AC00025C23 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 28A0AAE50D9B0CCF005BE974 /* ContextDemo_Prefix.pch */;
-		name = "ContextDemo_Prefix.pch: 1";
+		name = "ContextDemo_Prefix.pch: 15";
 		rLen = 0;
-		rLoc = 0;
+		rLoc = 328;
 		rType = 0;
 		vrLen = 328;
 		vrLoc = 0;
-	};
-	DCE8384B1105B72C00C432F4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* ContextDemoAppDelegate.m */;
-		name = "ContextDemoAppDelegate.m: 19";
-		rLen = 0;
-		rLoc = 409;
-		rType = 0;
-		vrLen = 1071;
-		vrLoc = 0;
-	};
-	DCE8384C1105B72C00C432F4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28C286E00D94DF7D0034E888 /* SourceViewController.m */;
-		name = "SourceViewController.m: 36";
-		rLen = 0;
-		rLoc = 1000;
-		rType = 0;
-		vrLen = 1581;
-		vrLoc = 0;
-	};
-	DCE8384D1105B72C00C432F4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28C286DF0D94DF7D0034E888 /* SourceViewController.h */;
-		name = "SourceViewController.h: 9";
-		rLen = 0;
-		rLoc = 182;
-		rType = 0;
-		vrLen = 420;
-		vrLoc = 0;
-	};
-	DCE8384E1105B72C00C432F4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = DC7D3C651105B2BF00905C4B /* ContextViewController.h */;
-		name = "ContextViewController.h: 5";
-		rLen = 0;
-		rLoc = 83;
-		rType = 0;
-		vrLen = 422;
-		vrLoc = 0;
-	};
-	DCE838581105B8EE00C432F4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = DC7D3C661105B2BF00905C4B /* ContextViewController.m */;
-		name = "ContextViewController.m: 35";
-		rLen = 0;
-		rLoc = 1001;
-		rType = 0;
-		vrLen = 1914;
-		vrLoc = 364;
 	};
 }

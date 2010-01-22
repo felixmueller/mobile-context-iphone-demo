@@ -12,13 +12,17 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
-		28C286E10D94DF7D0034E888 /* SourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* SourceViewController.m */; };
+		28C286E10D94DF7D0034E888 /* AttributesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* AttributesViewController.m */; };
 		DC159A7910D939B80021DC0C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC159A7810D939B80021DC0C /* CoreLocation.framework */; };
-		DC168D2B1105FFB3003171EE /* ContextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC168D281105FFB3003171EE /* ContextViewController.xib */; };
-		DC168D2C1105FFB3003171EE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC168D291105FFB3003171EE /* MainWindow.xib */; };
-		DC168D2D1105FFB3003171EE /* SourceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC168D2A1105FFB3003171EE /* SourceViewController.xib */; };
+		DC7846CA110A220300496C96 /* SourcesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7846C9110A220300496C96 /* SourcesViewController.m */; };
+		DC7847DD110A301F00496C96 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DC7847D8110A301F00496C96 /* Icon.png */; };
+		DC7847DE110A301F00496C96 /* TabAdaption.png in Resources */ = {isa = PBXBuildFile; fileRef = DC7847D9110A301F00496C96 /* TabAdaption.png */; };
+		DC7847DF110A301F00496C96 /* TabAttributes.png in Resources */ = {isa = PBXBuildFile; fileRef = DC7847DA110A301F00496C96 /* TabAttributes.png */; };
+		DC7847E0110A301F00496C96 /* TabContexts.png in Resources */ = {isa = PBXBuildFile; fileRef = DC7847DB110A301F00496C96 /* TabContexts.png */; };
+		DC7847E1110A301F00496C96 /* TabSources.png in Resources */ = {isa = PBXBuildFile; fileRef = DC7847DC110A301F00496C96 /* TabSources.png */; };
 		DC7D3C671105B2BF00905C4B /* ContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7D3C661105B2BF00905C4B /* ContextViewController.m */; };
 		DC9991471106014800B2D6AF /* libContextFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9991461106014800B2D6AF /* libContextFramework.a */; };
+		DCABB1DA110A1AFE00B74FE2 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCABB1D9110A1AFE00B74FE2 /* MainWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,17 +33,22 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28A0AAE50D9B0CCF005BE974 /* ContextDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextDemo_Prefix.pch; sourceTree = "<group>"; };
-		28C286DF0D94DF7D0034E888 /* SourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceViewController.h; sourceTree = "<group>"; };
-		28C286E00D94DF7D0034E888 /* SourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceViewController.m; sourceTree = "<group>"; };
+		28C286DF0D94DF7D0034E888 /* AttributesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributesViewController.h; sourceTree = "<group>"; };
+		28C286E00D94DF7D0034E888 /* AttributesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributesViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ContextDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ContextDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		DC159A7810D939B80021DC0C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		DC168D281105FFB3003171EE /* ContextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContextViewController.xib; sourceTree = "<group>"; };
-		DC168D291105FFB3003171EE /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		DC168D2A1105FFB3003171EE /* SourceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SourceViewController.xib; sourceTree = "<group>"; };
+		DC7846C8110A220300496C96 /* SourcesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourcesViewController.h; sourceTree = "<group>"; };
+		DC7846C9110A220300496C96 /* SourcesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourcesViewController.m; sourceTree = "<group>"; };
+		DC7847D8110A301F00496C96 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Images/Icon.png; sourceTree = "<group>"; };
+		DC7847D9110A301F00496C96 /* TabAdaption.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TabAdaption.png; path = Images/TabAdaption.png; sourceTree = "<group>"; };
+		DC7847DA110A301F00496C96 /* TabAttributes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TabAttributes.png; path = Images/TabAttributes.png; sourceTree = "<group>"; };
+		DC7847DB110A301F00496C96 /* TabContexts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TabContexts.png; path = Images/TabContexts.png; sourceTree = "<group>"; };
+		DC7847DC110A301F00496C96 /* TabSources.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TabSources.png; path = Images/TabSources.png; sourceTree = "<group>"; };
 		DC7D3C651105B2BF00905C4B /* ContextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextViewController.h; sourceTree = "<group>"; };
 		DC7D3C661105B2BF00905C4B /* ContextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextViewController.m; sourceTree = "<group>"; };
 		DC9991461106014800B2D6AF /* libContextFramework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libContextFramework.a; path = "/Users/Felix/Unterlagen/Studium/Masterarbeit/Implementation/mobile-context-iphone-lib/build/Debug-iphonesimulator/libContextFramework.a"; sourceTree = "<absolute>"; };
+		DCABB1D9110A1AFE00B74FE2 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +72,12 @@
 			children = (
 				1D3623240D0F684500981E51 /* ContextDemoAppDelegate.h */,
 				1D3623250D0F684500981E51 /* ContextDemoAppDelegate.m */,
-				28C286DF0D94DF7D0034E888 /* SourceViewController.h */,
-				28C286E00D94DF7D0034E888 /* SourceViewController.m */,
+				28C286DF0D94DF7D0034E888 /* AttributesViewController.h */,
+				28C286E00D94DF7D0034E888 /* AttributesViewController.m */,
 				DC7D3C651105B2BF00905C4B /* ContextViewController.h */,
 				DC7D3C661105B2BF00905C4B /* ContextViewController.m */,
+				DC7846C8110A220300496C96 /* SourcesViewController.h */,
+				DC7846C9110A220300496C96 /* SourcesViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -105,6 +116,11 @@
 			isa = PBXGroup;
 			children = (
 				8D1107310486CEB800E47090 /* ContextDemo-Info.plist */,
+				DC7847D8110A301F00496C96 /* Icon.png */,
+				DC7847D9110A301F00496C96 /* TabAdaption.png */,
+				DC7847DA110A301F00496C96 /* TabAttributes.png */,
+				DC7847DB110A301F00496C96 /* TabContexts.png */,
+				DC7847DC110A301F00496C96 /* TabSources.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -124,9 +140,7 @@
 		DC168D271105FFB3003171EE /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				DC168D281105FFB3003171EE /* ContextViewController.xib */,
-				DC168D291105FFB3003171EE /* MainWindow.xib */,
-				DC168D2A1105FFB3003171EE /* SourceViewController.xib */,
+				DCABB1D9110A1AFE00B74FE2 /* MainWindow.xib */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -183,9 +197,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC168D2B1105FFB3003171EE /* ContextViewController.xib in Resources */,
-				DC168D2C1105FFB3003171EE /* MainWindow.xib in Resources */,
-				DC168D2D1105FFB3003171EE /* SourceViewController.xib in Resources */,
+				DCABB1DA110A1AFE00B74FE2 /* MainWindow.xib in Resources */,
+				DC7847DD110A301F00496C96 /* Icon.png in Resources */,
+				DC7847DE110A301F00496C96 /* TabAdaption.png in Resources */,
+				DC7847DF110A301F00496C96 /* TabAttributes.png in Resources */,
+				DC7847E0110A301F00496C96 /* TabContexts.png in Resources */,
+				DC7847E1110A301F00496C96 /* TabSources.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,8 +215,9 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* ContextDemoAppDelegate.m in Sources */,
-				28C286E10D94DF7D0034E888 /* SourceViewController.m in Sources */,
+				28C286E10D94DF7D0034E888 /* AttributesViewController.m in Sources */,
 				DC7D3C671105B2BF00905C4B /* ContextViewController.m in Sources */,
+				DC7846CA110A220300496C96 /* SourcesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,12 +233,13 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ContextDemo_Prefix.pch;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../mobile-context-iphone-lib/**\"";
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../mobile-context-iphone-lib/build/${BUILD_STYLE}-${PLATFORM_NAME}/usr/local/include";
 				INFOPLIST_FILE = "ContextDemo-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../mobile-context-iphone-lib/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ContextDemo;
 			};
 			name = Debug;
@@ -232,12 +251,13 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ContextDemo_Prefix.pch;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../mobile-context-iphone-lib/**\"";
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../mobile-context-iphone-lib/build/${BUILD_STYLE}-${PLATFORM_NAME}/usr/local/include";
 				INFOPLIST_FILE = "ContextDemo-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../mobile-context-iphone-lib/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ContextDemo;
 			};
 			name = Release;

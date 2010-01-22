@@ -1,34 +1,44 @@
 //
-//  ContextViewController.m
+//  AttributesViewController.m
 //  ContextDemo
 //
-//  Created by Felix on 19.01.10.
+//  Created by Felix on 16.12.09.
 //  Copyright 2009 Felix Mueller (felixmueller@mac.com). All rights reserved.
 //
 
-#import "ContextViewController.h"
+#import "AttributesViewController.h"
 
-@implementation ContextViewController
+@implementation AttributesViewController
 
-@synthesize contextTypes;
 @synthesize contextNames;
+@synthesize contextValues;
 
 - (void)refreshContexts:(id)sender
 {
+		
+	// Get the application delegate with the context service
+	ContextDemoAppDelegate *delegate = (ContextDemoAppDelegate *)[[UIApplication sharedApplication] delegate];
 
-	// Get the context attributes from the context service
-	ContextDemoAppDelegate *delegate = (ContextDemoAppDelegate *)[[UIApplication sharedApplication] delegate];	
+	// Get all context soures
+	NSArray *contextSources = [delegate.contextService getContextSources];
 	
-	// Get all contexts from the context service
-	NSDictionary *contexts = [delegate.contextService getContextsForUser:@"FelixMueller"];
+	// Iterate all context sources
+	for(NSString *contextSource in contextSources) {
+		
+		// Enable all context sources found
+		[delegate.contextService enableContextSource:contextSource];
+	}	
+	
+	// Get all context source attributes
+	NSDictionary *contexts = [delegate.contextService getContextSourceAttributes];
+
+	// Save all context source attributes for table
 	NSArray *contextKeys = [NSArray arrayWithArray:[contexts allKeys]];
-	
-	// Iterate all contexts
-	self.contextTypes = [[NSMutableArray alloc] init];
 	self.contextNames = [[NSMutableArray alloc] init];
+	self.contextValues = [[NSMutableArray alloc] init];
 	for(NSString *contextKey in contextKeys) {
-		[contextTypes addObject:contextKey];
-		[contextNames addObject:[[contexts objectForKey:contextKey] type]];
+		[contextNames addObject:contextKey];
+		[contextValues addObject:[[contexts objectForKey:contextKey] contextValue]];
 	}
 	
 	// Reload table view
@@ -36,44 +46,11 @@
 	
 }
 
-/*- (void)saveContexts:(id)sender
-{
-
-	NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
-	
-	// Get the context attributes from the context service
-	ContextDemoAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-
-	NSDictionary *contexts = [delegate.contextService getAllContexts];
-
-	NSData *contextsAsData = [NSKeyedArchiver archivedDataWithRootObject:contexts];
-
-	/*	NSArray *contextKeys = [NSArray arrayWithArray:[contexts allKeys]];
-	self.contextNames = [[NSMutableArray alloc] init];
-	self.contextValues = [[NSMutableArray alloc] init];
-	for(NSString *contextKey in contextKeys) {
-		[standardUserDefaults setObject:[contexts objectForKey:contextKey] forKey:contextKey];
-		//[contextNames addObject:contextKey];
-		//[contextValues addObject:[[contexts objectForKey:contextKey] contextValue]];
-	}
-	[standardUserDefaults synchronize];
-*//*
-	
-	if (standardUserDefaults) {
-		[standardUserDefaults setObject:contextsAsData forKey:@"Contexts"];
-		[standardUserDefaults synchronize];
-	}
-	
-}*/
-
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
 	// Refresh button
 	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshContexts:)];
-	
-	// Save button
-//	self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveContexts:)];
 	
 }
 
@@ -143,7 +120,7 @@
     }
     
 	// Configure the cell.
-	cell.textLabel.text = [contextTypes objectAtIndex:indexPath.row];
+	cell.textLabel.text = [contextValues objectAtIndex:indexPath.row];
 	cell.detailTextLabel.text = [contextNames objectAtIndex:indexPath.row];
 	
     return cell;

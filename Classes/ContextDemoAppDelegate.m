@@ -7,14 +7,12 @@
 //
 
 #import "ContextDemoAppDelegate.h"
-#import "SourceViewController.h"
-#import "ContextViewController.h"
 
 
 @implementation ContextDemoAppDelegate
 
 @synthesize window;
-@synthesize navigationController;
+@synthesize tabBarController;
 
 // Synthesize context service
 @synthesize contextService;
@@ -26,11 +24,9 @@
     
     // Init the context service
 	contextService = [[ContextService alloc] init];
-	//NSDictionary *contexts = [contextService getContexts];
-	//NSLog(@"%@", contexts);
 	
-	[window addSubview:[navigationController view]];
-    [window makeKeyAndVisible];
+    // Add the tab bar controller's current view as a subview of the window
+    [window addSubview:tabBarController.view];
 }
 
 
@@ -47,7 +43,7 @@
 	// Release the context service
 	[contextService release];
 	
-	[navigationController release];
+    [tabBarController release];
 	[window release];
 	[super dealloc];
 }
