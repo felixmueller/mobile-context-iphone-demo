@@ -13,21 +13,11 @@
 @synthesize contextNames;
 @synthesize contextValues;
 
-- (void)refreshContexts:(id)sender
+- (void)refreshAttributes:(id)sender
 {
 		
 	// Get the application delegate with the context service
 	ContextDemoAppDelegate *delegate = (ContextDemoAppDelegate *)[[UIApplication sharedApplication] delegate];
-
-	// Get all context soures
-//	NSArray *contextSources = [delegate.contextService getContextSources];
-	
-	// Iterate all context sources
-//	for(NSString *contextSource in contextSources) {
-		
-		// Enable all context sources found
-//		[delegate.contextService enableContextSource:contextSource];
-//	}
 	
 	// Get all context source attributes
 	NSDictionary *contexts = [delegate.contextService getContextSourceAttributes];
@@ -50,15 +40,17 @@
 	[super viewDidLoad];
 	
 	// Refresh button
-	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshContexts:)];
+	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshAttributes:)];
 	
 }
 
-/*
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+	
+	// Refresh the attributes at view loading
+	[self refreshAttributes:self];
 }
-*/
+
 /*
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];

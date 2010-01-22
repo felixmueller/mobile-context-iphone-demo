@@ -66,11 +66,14 @@
  [super viewWillAppear:animated];
  }
  */
-/*
- - (void)viewDidAppear:(BOOL)animated {
- [super viewDidAppear:animated];
- }
- */
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+	
+	// Refresh the attributes at view loading
+	[self refreshSources:self];
+}
+
 /*
  - (void)viewWillDisappear:(BOOL)animated {
  [super viewWillDisappear:animated];

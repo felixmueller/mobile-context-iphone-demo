@@ -74,7 +74,7 @@
 	
 	// Save button
 //	self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveContexts:)];
-	
+
 }
 
 /*
@@ -82,11 +82,14 @@
     [super viewWillAppear:animated];
 }
 */
-/*
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+	
+	// Refresh the attributes at view loading
+	[self refreshContexts:self];
 }
-*/
+
 /*
 - (void)viewWillDisappear:(BOOL)animated {
 	[super viewWillDisappear:animated];

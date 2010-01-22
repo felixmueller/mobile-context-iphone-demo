@@ -245,7 +245,10 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../mobile-context-iphone-lib/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = ContextDemo;
 			};
 			name = Debug;
@@ -263,7 +266,10 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../mobile-context-iphone-lib/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = ContextDemo;
 			};
 			name = Release;
