@@ -7,13 +7,14 @@
 //
 
 #import "SourcesViewController.h"
+#import "UISourceSwitch.h"
 
 
 @implementation SourcesViewController
 
 @synthesize contextSources;
 
-- (void)refreshContexts:(id)sender
+- (void)refreshSources:(id)sender
 {
 	
 	// Get the application delegate with the context service
@@ -21,26 +22,32 @@
 	
 	// Get all context soures
 	self.contextSources = [delegate.contextService getContextSources];
-/*	
-	// Iterate all context sources
-	for(NSString *contextSource in contextSources) {
-		
-		// Enable all context sources found
-		[delegate.contextService enableContextSource:contextSource];
-	}	
 	
-	// Get all context source attributes
-	NSDictionary *contexts = [delegate.contextService getContextSourceAttributes];
+	// Reload table view
+	[self.tableView reloadData];
 	
-	// Save all context source attributes for table
-	NSArray *contextKeys = [NSArray arrayWithArray:[contexts allKeys]];
-	self.contextNames = [[NSMutableArray alloc] init];
-	self.contextValues = [[NSMutableArray alloc] init];
-	for(NSString *contextKey in contextKeys) {
-		[contextNames addObject:contextKey];
-		[contextValues addObject:[[contexts objectForKey:contextKey] contextValue]];
-	}
-	*/
+}
+
+- (BOOL)getStateForContextSource:(NSString *)source {
+	
+	// Get the application delegate with the context service
+	ContextDemoAppDelegate *delegate = (ContextDemoAppDelegate *)[[UIApplication sharedApplication] delegate];
+	
+	// Return the state from the context service
+	return [delegate.contextService contextSourceEnabled:source];
+}
+
+- (void)setStateForContextSource:(id)sender {
+	
+	// Get the application delegate with the context service
+	ContextDemoAppDelegate *delegate = (ContextDemoAppDelegate *)[[UIApplication sharedApplication] delegate];
+	
+	// Enable or disable the context source
+	if ([sender isOn])
+		[delegate.contextService enableContextSource:[sender source]];
+	else
+		[delegate.contextService disableContextSource:[sender source]];
+	
 	// Reload table view
 	[self.tableView reloadData];
 	
@@ -50,7 +57,7 @@
 	[super viewDidLoad];
 	
 	// Refresh button
-	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshContexts:)];
+	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshSources:)];
 	
 }
 
@@ -121,6 +128,19 @@
     
 	// Configure the cell.
 	cell.textLabel.text = [contextSources objectAtIndex:indexPath.row];
+	
+	// Add a state switch for each row
+	UISourceSwitch* stateSwitch = [[UISourceSwitch alloc] init];
+	stateSwitch.source = [contextSources objectAtIndex:indexPath.row];
+
+	// Set the switch state
+	stateSwitch.on = [self getStateForContextSource:[contextSources objectAtIndex:indexPath.row]];
+
+	// Set the switch action
+	[stateSwitch addTarget:self action:@selector(setStateForContextSource:) forControlEvents:UIControlEventValueChanged];
+
+	cell.accessoryView = stateSwitch;
+	[stateSwitch release];
 	
     return cell;
 }

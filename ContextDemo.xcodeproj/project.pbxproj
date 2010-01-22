@@ -14,6 +14,7 @@
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		28C286E10D94DF7D0034E888 /* AttributesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* AttributesViewController.m */; };
 		DC159A7910D939B80021DC0C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC159A7810D939B80021DC0C /* CoreLocation.framework */; };
+		DC1AFA39110A44C5003DBAB1 /* UISourceSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1AFA38110A44C5003DBAB1 /* UISourceSwitch.m */; };
 		DC7846CA110A220300496C96 /* SourcesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7846C9110A220300496C96 /* SourcesViewController.m */; };
 		DC7847DD110A301F00496C96 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DC7847D8110A301F00496C96 /* Icon.png */; };
 		DC7847DE110A301F00496C96 /* TabAdaption.png in Resources */ = {isa = PBXBuildFile; fileRef = DC7847D9110A301F00496C96 /* TabAdaption.png */; };
@@ -38,6 +39,8 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ContextDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ContextDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		DC159A7810D939B80021DC0C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DC1AFA37110A44C5003DBAB1 /* UISourceSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISourceSwitch.h; sourceTree = "<group>"; };
+		DC1AFA38110A44C5003DBAB1 /* UISourceSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISourceSwitch.m; sourceTree = "<group>"; };
 		DC7846C8110A220300496C96 /* SourcesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourcesViewController.h; sourceTree = "<group>"; };
 		DC7846C9110A220300496C96 /* SourcesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourcesViewController.m; sourceTree = "<group>"; };
 		DC7847D8110A301F00496C96 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Images/Icon.png; sourceTree = "<group>"; };
@@ -78,6 +81,8 @@
 				DC7D3C661105B2BF00905C4B /* ContextViewController.m */,
 				DC7846C8110A220300496C96 /* SourcesViewController.h */,
 				DC7846C9110A220300496C96 /* SourcesViewController.m */,
+				DC1AFA37110A44C5003DBAB1 /* UISourceSwitch.h */,
+				DC1AFA38110A44C5003DBAB1 /* UISourceSwitch.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				28C286E10D94DF7D0034E888 /* AttributesViewController.m in Sources */,
 				DC7D3C671105B2BF00905C4B /* ContextViewController.m in Sources */,
 				DC7846CA110A220300496C96 /* SourcesViewController.m in Sources */,
+				DC1AFA39110A44C5003DBAB1 /* UISourceSwitch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

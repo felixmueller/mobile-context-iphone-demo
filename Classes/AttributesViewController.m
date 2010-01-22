@@ -20,14 +20,14 @@
 	ContextDemoAppDelegate *delegate = (ContextDemoAppDelegate *)[[UIApplication sharedApplication] delegate];
 
 	// Get all context soures
-	NSArray *contextSources = [delegate.contextService getContextSources];
+//	NSArray *contextSources = [delegate.contextService getContextSources];
 	
 	// Iterate all context sources
-	for(NSString *contextSource in contextSources) {
+//	for(NSString *contextSource in contextSources) {
 		
 		// Enable all context sources found
-		[delegate.contextService enableContextSource:contextSource];
-	}	
+//		[delegate.contextService enableContextSource:contextSource];
+//	}
 	
 	// Get all context source attributes
 	NSDictionary *contexts = [delegate.contextService getContextSourceAttributes];
