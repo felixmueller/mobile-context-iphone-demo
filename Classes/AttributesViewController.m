@@ -112,13 +112,13 @@
     }
     
 	// Configure the cell.
-	cell.textLabel.text = [contextValues objectAtIndex:indexPath.row];
-	cell.detailTextLabel.text = [contextNames objectAtIndex:indexPath.row];
+	cell.textLabel.text = [[[contextNames objectAtIndex:indexPath.row]
+							stringByAppendingString:@" : "]
+						   stringByAppendingString:[contextValues objectAtIndex:indexPath.row]];
+	//cell.detailTextLabel.text = [contextValues objectAtIndex:indexPath.row];
 	
     return cell;
 }
-
-
 
 /*
 // Override to support row selection in the table view.

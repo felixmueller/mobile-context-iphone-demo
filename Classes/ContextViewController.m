@@ -21,6 +21,7 @@
 	
 	// Get all contexts from the context service
 	NSDictionary *contexts = [delegate.contextService getContextsForUser:@"FelixMueller"];
+	
 	NSArray *contextKeys = [NSArray arrayWithArray:[contexts allKeys]];
 	
 	// Iterate all contexts

@@ -130,7 +130,11 @@
     }
     
 	// Configure the cell.
+	ContextDemoAppDelegate *delegate = (ContextDemoAppDelegate *)[[UIApplication sharedApplication] delegate];
 	cell.textLabel.text = [contextSources objectAtIndex:indexPath.row];
+	//cell.detailTextLabel.numberOfLines = 2;
+	cell.detailTextLabel.lineBreakMode = UILineBreakModeTailTruncation;
+	cell.detailTextLabel.text = [[[[[delegate.contextService getContextSourceAttributes:[contextSources objectAtIndex:indexPath.row]] description] stringByReplacingOccurrencesOfString:@"(" withString:@""] stringByReplacingOccurrencesOfString:@")" withString:@""] stringByReplacingOccurrencesOfString:@" " withString:@""];
 	
 	// Add a state switch for each row
 	UISourceSwitch* stateSwitch = [[UISourceSwitch alloc] init];
@@ -148,7 +152,11 @@
     return cell;
 }
 
-
+/*
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	return 50;	
+}
+*/
 
 /*
  // Override to support row selection in the table view.
