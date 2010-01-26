@@ -134,7 +134,7 @@
 	cell.textLabel.text = [contextSources objectAtIndex:indexPath.row];
 	//cell.detailTextLabel.numberOfLines = 2;
 	cell.detailTextLabel.lineBreakMode = UILineBreakModeTailTruncation;
-	cell.detailTextLabel.text = [[[[[delegate.contextService getContextSourceAttributes:[contextSources objectAtIndex:indexPath.row]] description] stringByReplacingOccurrencesOfString:@"(" withString:@""] stringByReplacingOccurrencesOfString:@")" withString:@""] stringByReplacingOccurrencesOfString:@" " withString:@""];
+	cell.detailTextLabel.text = [[[[[delegate.contextService getSourceAttributes:[contextSources objectAtIndex:indexPath.row]] description] stringByReplacingOccurrencesOfString:@"(" withString:@""] stringByReplacingOccurrencesOfString:@")" withString:@""] stringByReplacingOccurrencesOfString:@" " withString:@""];
 	
 	// Add a state switch for each row
 	UISourceSwitch* stateSwitch = [[UISourceSwitch alloc] init];

@@ -20,15 +20,15 @@
 	ContextDemoAppDelegate *delegate = (ContextDemoAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
 	// Get all context source attributes
-	NSDictionary *contexts = [delegate.contextService getContextSourceAttributes];
+	NSDictionary *contexts = [delegate.contextService getSourceAttributes];
 
 	// Save all context source attributes for table
-	NSArray *contextKeys = [NSArray arrayWithArray:[contexts allKeys]];
+	NSArray *contextKeys = [self sortDictionaryByKeys:contexts];
 	self.contextNames = [[NSMutableArray alloc] init];
 	self.contextValues = [[NSMutableArray alloc] init];
 	for(NSString *contextKey in contextKeys) {
 		[contextNames addObject:contextKey];
-		[contextValues addObject:[[contexts objectForKey:contextKey] contextValue]];
+		[contextValues addObject:[[contexts objectForKey:contextKey] value]];
 	}
 	
 	// Reload table view
@@ -171,11 +171,63 @@
 }
 */
 
+- (NSMutableArray*)sortDictionaryByKeys:(NSDictionary*)dict
+{
+	
+	if(!dict)
+		return nil;
+	NSMutableArray *sortedKeys = [NSMutableArray arrayWithArray: [dict allKeys]];
+	if([sortedKeys count] <= 0)
+		return nil;
+	else if([sortedKeys count] == 1)
+		return sortedKeys; // No sort needed
+	
+	// Perform bubble sort on keys
+	int n = [sortedKeys count] -1;
+	int i;
+	BOOL swapped = YES;
+	
+	NSString *key1,*key2;
+	NSComparisonResult result;
+	
+	while(swapped)
+	{
+		swapped = NO;
+		for(i=0;i<n;i++)
+		{
+			key1 = [sortedKeys objectAtIndex: i];
+			key2 = [sortedKeys objectAtIndex: i+1];
+			
+			// Here is a basic NSString comparison
+			result = [key1 compare: key2 options: NSCaseInsensitiveSearch];
+			if(result == NSOrderedDescending)
+			{
+				// Retain for good form
+				[key1 retain];
+				[key2 retain];
+				
+				// Pop the two keys out of the array
+				[sortedKeys removeObjectAtIndex: i]; // Key 1
+				[sortedKeys removeObjectAtIndex: i]; // Key 2
+				
+				// Replace keys
+				[sortedKeys insertObject: key1 atIndex: i];
+				[sortedKeys insertObject: key2 atIndex: i];
+				
+				[key1 release];
+				[key2 release];
+				
+				swapped = YES;
+			}
+		}
+	}
+	
+	return sortedKeys;
+}
 
 - (void)dealloc {
     [super dealloc];
 }
-
 
 @end
 

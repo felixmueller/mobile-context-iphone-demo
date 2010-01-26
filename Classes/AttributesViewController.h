@@ -18,4 +18,6 @@
 @property (nonatomic, retain) NSMutableArray *contextNames;
 @property (nonatomic, retain) NSMutableArray *contextValues;
 
+- (NSMutableArray*)sortDictionaryByKeys:(NSDictionary*)dict;
+
 @end

@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="145"/>
+			<integer value="131"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -53,34 +53,35 @@
 			<object class="IBUITabBarController" id="1034742383">
 				<object class="IBUISimulatedTabBarMetrics" key="IBUISimulatedBottomBarMetrics"/>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
-				<object class="IBUINavigationController" key="IBUISelectedViewController" id="988835104">
-					<object class="IBUITabBarItem" key="IBUITabBarItem" id="361577925">
-						<string key="IBUITitle">Adaption</string>
+				<object class="IBUINavigationController" key="IBUISelectedViewController" id="666152357">
+					<object class="IBUITabBarItem" key="IBUITabBarItem" id="47760768">
+						<string key="IBUITitle">Attributes</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">TabAdaption.png</string>
+							<string key="NSResourceName">TabAttributes.png</string>
 						</object>
 						<reference key="IBUITabBar"/>
 					</object>
 					<reference key="IBUIToolbarItems" ref="0"/>
 					<reference key="IBUIParentViewController" ref="1034742383"/>
-					<object class="IBUINavigationBar" key="IBUINavigationBar" id="670948584">
+					<object class="IBUINavigationBar" key="IBUINavigationBar" id="824541101">
 						<nil key="NSNextResponder"/>
 						<int key="NSvFlags">256</int>
 						<string key="NSFrameSize">{320, 44}</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
+						<int key="IBUIBarStyle">1</int>
 					</object>
 					<object class="NSMutableArray" key="IBUIViewControllers">
 						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="IBUIViewController" id="789041821">
+						<object class="IBUIViewController" id="47712447">
 							<reference key="IBUIToolbarItems" ref="0"/>
-							<object class="IBUINavigationItem" key="IBUINavigationItem" id="723173568">
+							<object class="IBUINavigationItem" key="IBUINavigationItem" id="83699617">
 								<reference key="IBUINavigationBar"/>
-								<string key="IBUITitle">Context Adaption</string>
+								<string key="IBUITitle">Context Attribute Values</string>
 							</object>
-							<reference key="IBUIParentViewController" ref="988835104"/>
+							<reference key="IBUIParentViewController" ref="666152357"/>
 						</object>
 					</object>
 				</object>
@@ -104,6 +105,7 @@
 							<bool key="IBUIOpaque">NO</bool>
 							<bool key="IBUIClipsSubviews">YES</bool>
 							<bool key="IBUIMultipleTouchEnabled">YES</bool>
+							<int key="IBUIBarStyle">1</int>
 						</object>
 						<object class="NSMutableArray" key="IBUIViewControllers">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -116,36 +118,7 @@
 							</object>
 						</object>
 					</object>
-					<object class="IBUINavigationController" id="666152357">
-						<object class="IBUITabBarItem" key="IBUITabBarItem" id="47760768">
-							<string key="IBUITitle">Attributes</string>
-							<object class="NSCustomResource" key="IBUIImage">
-								<string key="NSClassName">NSImage</string>
-								<string key="NSResourceName">TabAttributes.png</string>
-							</object>
-							<reference key="IBUITabBar"/>
-						</object>
-						<reference key="IBUIToolbarItems" ref="0"/>
-						<reference key="IBUIParentViewController" ref="1034742383"/>
-						<object class="IBUINavigationBar" key="IBUINavigationBar" id="824541101">
-							<nil key="NSNextResponder"/>
-							<int key="NSvFlags">256</int>
-							<string key="NSFrameSize">{320, 44}</string>
-							<bool key="IBUIOpaque">NO</bool>
-							<bool key="IBUIClipsSubviews">YES</bool>
-							<bool key="IBUIMultipleTouchEnabled">YES</bool>
-						</object>
-						<object class="NSMutableArray" key="IBUIViewControllers">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIViewController" id="47712447">
-								<reference key="IBUIToolbarItems" ref="0"/>
-								<object class="IBUINavigationItem" key="IBUINavigationItem" id="83699617">
-									<string key="IBUITitle">Context Attributes</string>
-								</object>
-								<reference key="IBUIParentViewController" ref="666152357"/>
-							</object>
-						</object>
-					</object>
+					<reference ref="666152357"/>
 					<object class="IBUINavigationController" id="699194320">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="492137183">
 							<string key="IBUITitle">Contexts</string>
@@ -164,19 +137,50 @@
 							<bool key="IBUIOpaque">NO</bool>
 							<bool key="IBUIClipsSubviews">YES</bool>
 							<bool key="IBUIMultipleTouchEnabled">YES</bool>
+							<int key="IBUIBarStyle">1</int>
 						</object>
 						<object class="NSMutableArray" key="IBUIViewControllers">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBUIViewController" id="369626126">
 								<reference key="IBUIToolbarItems" ref="0"/>
 								<object class="IBUINavigationItem" key="IBUINavigationItem" id="1043097588">
-									<string key="IBUITitle">Actual Contexts</string>
+									<string key="IBUITitle">Current Contexts</string>
 								</object>
 								<reference key="IBUIParentViewController" ref="699194320"/>
 							</object>
 						</object>
 					</object>
-					<reference ref="988835104"/>
+					<object class="IBUINavigationController" id="988835104">
+						<object class="IBUITabBarItem" key="IBUITabBarItem" id="361577925">
+							<string key="IBUITitle">Adaption</string>
+							<object class="NSCustomResource" key="IBUIImage">
+								<string key="NSClassName">NSImage</string>
+								<string key="NSResourceName">TabAdaption.png</string>
+							</object>
+							<reference key="IBUITabBar"/>
+						</object>
+						<reference key="IBUIToolbarItems" ref="0"/>
+						<reference key="IBUIParentViewController" ref="1034742383"/>
+						<object class="IBUINavigationBar" key="IBUINavigationBar" id="670948584">
+							<nil key="NSNextResponder"/>
+							<int key="NSvFlags">256</int>
+							<string key="NSFrameSize">{320, 44}</string>
+							<bool key="IBUIOpaque">NO</bool>
+							<bool key="IBUIClipsSubviews">YES</bool>
+							<bool key="IBUIMultipleTouchEnabled">YES</bool>
+							<int key="IBUIBarStyle">1</int>
+						</object>
+						<object class="NSMutableArray" key="IBUIViewControllers">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBUIViewController" id="789041821">
+								<reference key="IBUIToolbarItems" ref="0"/>
+								<object class="IBUINavigationItem" key="IBUINavigationItem" id="723173568">
+									<string key="IBUITitle">Context Adaption Example</string>
+								</object>
+								<reference key="IBUIParentViewController" ref="988835104"/>
+							</object>
+						</object>
+					</object>
 				</object>
 				<object class="IBUITabBar" key="IBUITabBar" id="795333663">
 					<nil key="NSNextResponder"/>
