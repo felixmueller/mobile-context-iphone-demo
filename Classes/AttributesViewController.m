@@ -8,6 +8,7 @@
 
 #import "AttributesViewController.h"
 
+
 @implementation AttributesViewController
 
 @synthesize contextNames;
@@ -16,7 +17,7 @@
 
 - (void)refreshAttributes:(id)sender
 {
-		
+	
 	// Get the application delegate with the context service
 	ContextDemoAppDelegate *delegate = (ContextDemoAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
