@@ -12,10 +12,12 @@
 	
 	NSMutableArray *contextTypes;
 	NSMutableArray *contextNames;
+	NSTimer *refreshTimer;
 	
 }
 
 @property (nonatomic, retain) NSMutableArray *contextTypes;
 @property (nonatomic, retain) NSMutableArray *contextNames;
+@property (nonatomic, retain) NSTimer *refreshTimer;
 
 @end

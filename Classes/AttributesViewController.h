@@ -12,11 +12,13 @@
 	
 	NSMutableArray *contextNames;
 	NSMutableArray *contextValues;
+	NSTimer *refreshTimer;
 	
 }
 
 @property (nonatomic, retain) NSMutableArray *contextNames;
 @property (nonatomic, retain) NSMutableArray *contextValues;
+@property (nonatomic, retain) NSTimer *refreshTimer;
 
 - (NSMutableArray*)sortDictionaryByKeys:(NSDictionary*)dict;
 

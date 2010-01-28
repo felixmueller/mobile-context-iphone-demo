@@ -12,6 +12,7 @@
 
 @synthesize contextTypes;
 @synthesize contextNames;
+@synthesize refreshTimer;
 
 - (void)refreshContexts:(id)sender
 {
@@ -34,8 +35,32 @@
 	
 	// Reload table view
 	[self.tableView reloadData];
-	
+
 }
+	
+- (void)autoRefreshContexts:(id)sender
+{
+	
+	// Check if the refresh timer is off
+	if ([self.refreshTimer isValid] == NO) {
+		
+		// Turn the refresh timer on
+		self.refreshTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(refreshContexts:) userInfo:nil repeats:YES];
+		
+		// Set the bar button to pause
+		self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPause target:self action:@selector(autoRefreshContexts:)];
+	}
+	else {
+		
+		// Turn the refresh timer off
+		[self.refreshTimer invalidate];
+		self.refreshTimer = nil;
+			
+		// Set the bar button to play
+		self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPlay target:self action:@selector(autoRefreshContexts:)];
+	}
+}
+	
 
 /*- (void)saveContexts:(id)sender
 {
@@ -76,6 +101,9 @@
 	// Save button
 //	self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveContexts:)];
 
+	// Auto refresh button
+	self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPlay target:self action:@selector(autoRefreshContexts:)];
+	
 }
 
 /*

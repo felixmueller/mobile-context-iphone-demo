@@ -12,6 +12,7 @@
 
 @synthesize contextNames;
 @synthesize contextValues;
+@synthesize refreshTimer;
 
 - (void)refreshAttributes:(id)sender
 {
@@ -36,11 +37,38 @@
 	
 }
 
+- (void)autoRefreshAttributes:(id)sender
+{
+	
+	// Check if the refresh timer is off
+	if ([self.refreshTimer isValid] == NO) {
+
+		// Turn the refresh timer on
+		self.refreshTimer = [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(refreshAttributes:) userInfo:nil repeats:YES];
+		
+		// Set the bar button to pause
+		self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPause target:self action:@selector(autoRefreshAttributes:)];
+	}
+	else {
+		
+		// Turn the refresh timer off
+		[self.refreshTimer invalidate];
+		self.refreshTimer = nil;
+		
+		// Set the bar button to play
+		self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPlay target:self action:@selector(autoRefreshAttributes:)];
+	}
+}
+
+
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
 	// Refresh button
 	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshAttributes:)];
+	
+	// Auto refresh button
+	self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPlay target:self action:@selector(autoRefreshAttributes:)];
 	
 }
 
