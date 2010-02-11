@@ -22,7 +22,7 @@
 	ContextDemoAppDelegate *delegate = (ContextDemoAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
 	// Get all context source attributes
-	NSDictionary *contexts = [delegate.contextService getSourceAttributes];
+	NSDictionary *contexts = [delegate.contextService getSourceAttributeValues];
 
 	// Save all context source attributes for table
 	NSArray *contextKeys = [self sortDictionaryByKeys:contexts];
